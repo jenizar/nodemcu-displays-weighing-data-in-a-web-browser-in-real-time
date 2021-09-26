@@ -4,13 +4,13 @@
 #include "HX711.h"
 
 // HX711 circuit wiring
-const int LOADCELL_DOUT_PIN = 14;
-const int LOADCELL_SCK_PIN = 12;  
+const int LOADCELL_DOUT_PIN = 14;  // pin D5 - nodemcu
+const int LOADCELL_SCK_PIN = 12;   // pin D6 - nodemcu
 
 HX711 scale;
 
-const char* ssid = "ALQALAM"; //wifi ssid / wifi name
-const char* password = "bismillah"; //wifi password
+const char* ssid = "cloud"; //wifi ssid / wifi name
+const char* password = "outofsky"; //wifi password
 
 //Your Domain name with URL path or IP address with path
 String serverName = "http://192.168.1.180/arduino/loadcell/postdata.php?weight=";
@@ -28,7 +28,7 @@ void setup() {
   
   Serial.println("Pastikan Tidak Ada Beban");
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
-  scale.set_scale(62.5);                      // this value is obtained by calibrating the scale with known weights; see the README for details
+  scale.set_scale(62.5);        // this value is obtained by calibrating the scale with known weights; see the README for details
   scale.tare();                // reset the scale to 0
   Serial.println("Silahkan Untuk Menimbang");
  
