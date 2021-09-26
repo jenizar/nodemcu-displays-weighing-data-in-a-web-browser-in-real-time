@@ -20,7 +20,7 @@ A. digital hanging scale to HX711 load cell amplifier
 4. disconnect the cable connected to the battery on the modified scale display panel board.
 5. lastly, close the case gently tighten the bolt nut; make sure the position of the component parts remains the same when first opened.
 6. match the 4 wires coming from the weighing sensor to the load cell amplifier HX711 red - red, black - black, white - white, green - green
-7. Adjust the 4 pins on the HX711 load cell amplifier with the pins on the Arduino board. VCC - 5v, DAT - A1, CLK - A0, GND - GND
+7. Adjust the 4 pins on the HX711 load cell amplifier with the pins on the Arduino board. VCC - 5v, DAT - D5, CLK - D6, GND - GND
 
 references:
 1. https://github.com/jenizar/arduino-digital-hanging-scale-data-on-p10-led-panel
