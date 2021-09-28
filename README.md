@@ -24,10 +24,15 @@ A. digital hanging scale to HX711 load cell amplifier
 7. Adjust the 4 pins on the HX711 load cell amplifier with the pins on the Nodemcu board. VCC - 5v, DAT - D5, CLK - D6, GND - GND
 
 If you use HX711 green board:
+
 Pin HX711     Loadcell
+
 E+        --   Green
+
 E-        --   White
+
 A-        --   Black
+
 A+        --   Red
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Dn_1I2RpnhA/0.jpg)](http://www.youtube.com/watch?v=Dn_1I2RpnhA)
